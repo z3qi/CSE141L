@@ -51,7 +51,8 @@ always_ff @(posedge Clk or negedge Reset) begin
         pc_done_flag <= 1'b1;
       else if (problem == 2'b01 && PC == 8'd105)
         pc_done_flag <= 1'b1;
-      else if (problem == 2'b10 && PC == 8'd88)
+//      else if (problem == 2'b10 && PC == 8'd88)
+      else if (problem == 2'b10 && PC == 8'd81)
         pc_done_flag <= 1'b1;
     end
   end

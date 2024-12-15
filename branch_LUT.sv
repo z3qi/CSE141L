@@ -68,28 +68,32 @@ module branch_LUT(
     else if (problem == 2'b10) begin
       if (loop_branch) begin
         case(Jptr_b)
-        0: Jump = 'd86;
-        1: Jump = 'd24;
-        2: Jump = 'd34;
-        3: Jump = 'd44;
-        4: Jump = 'd48;
-        5: Jump = 'd61;
-        6: Jump = 'd66;
-        7: Jump = 'd69;
+        // 0: Jump = 'd86;
+        // 1: Jump = 'd24;
+        // 2: Jump = 'd34;
+        // 3: Jump = 'd44;
+        // 4: Jump = 'd48;
+        // 5: Jump = 'd61;
+        // 6: Jump = 'd66;
+        // 7: Jump = 'd69;
+        0: Jump = 'd46;
+        1: Jump = 'd61;
         endcase
         // $display("B Jump = %d", Jump);
       end
       else begin
         case(Jptr_con)
-        0: Jump = 'd86;
-        1: Jump = 'd24;
-        2: Jump = 'd34;
-        3: Jump = 'd44;
-        4: Jump = 'd48;
-        5: Jump = 'd61;
-        6: Jump = 'd66;
-        7: Jump = 'd69;
-        8: Jump = 'd79;
+        // 0: Jump = 'd86;
+        // 1: Jump = 'd24;
+        // 2: Jump = 'd34;
+        // 3: Jump = 'd44;
+        // 4: Jump = 'd48;
+        // 5: Jump = 'd61;
+        // 6: Jump = 'd66;
+        // 7: Jump = 'd69;
+        // 8: Jump = 'd79;
+        0: Jump = 'd46;
+        1: Jump = 'd61;
         endcase
         // $display("Other Jump = %d", Jump);
       end

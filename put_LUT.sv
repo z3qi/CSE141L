@@ -34,14 +34,22 @@ module put_LUT(
 
     else if (problem == 'b10) begin
       case(Num_put_idx)
+      // 0: Num_to_put = 0; 
+      // 1: Num_to_put = 1;
+      // 2: Num_to_put = 8'b01000010;
+      // 3: Num_to_put = 8'b00001000;
+      // 4: Num_to_put = 8'b00010000;
+      // 5: Num_to_put = 8'b10000000;
+      // 6: Num_to_put = 8'b00000100;
+      // 7: Num_to_put = 0;
       0: Num_to_put = 0; 
       1: Num_to_put = 1;
-      2: Num_to_put = 8'b01000010;
-      3: Num_to_put = 8'b00001000;
-      4: Num_to_put = 8'b00010000;
-      5: Num_to_put = 8'b10000000;
-      6: Num_to_put = 8'b00000100;
-      7: Num_to_put = 0;
+      2: Num_to_put = 2;
+      3: Num_to_put = 3;
+      4: Num_to_put = 4;
+      5: Num_to_put = 6;
+      6: Num_to_put = 8'b01000000;
+      7: Num_to_put = 8'b10000000;
       endcase
     end
   end
